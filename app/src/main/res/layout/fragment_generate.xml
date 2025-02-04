@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:padding="16dp"
+        android:background="@drawable/div">
+
+
+        <EditText
+            android:id="@+id/productNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom du produit"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:background="@drawable/edit"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/productPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prix du produit"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edit"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/productDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description du produit"
+            android:padding="12dp"
+            android:background="@drawable/edit"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+
+
+        <Button
+            android:id="@+id/generateQRButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Générer le Code QR"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F57C00"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+
+        <ImageView
+            android:id="@+id/qrImageView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Aperçu du code QR"
+            android:background="#FFFFFF"
+            android:scaleType="center"
+            />
+        <ImageView
+            android:id="@+id/partage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/partage"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/bar"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="HISTORY"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:textColor="@color/white"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="80dp"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <!-- Section for Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/scane"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scane"
+            android:backgroundTint="#FFA000"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/generate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Generate"
+            android:backgroundTint="#FFA000"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+    <ImageView
+        android:id="@+id/imagevide"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/imagevide"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/textvide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INCONE INFORMATIONS ENREGISTRER"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginStart="60dp"
+        android:textColor="#E64A19"
+        android:visibility="gone"
+
+        />
+    <ImageView
+        android:id="@+id/intoro"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/download"/>
+
+
+
+
+</LinearLayout>
